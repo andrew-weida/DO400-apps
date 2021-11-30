@@ -23,6 +23,7 @@ pipeline {
     stage ('Unit Tests') {
       steps {
         dir ('exchange-cli') {
+        # run unit test
         sh "npm run test:unit"
       }
     }
